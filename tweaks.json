@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "catalog_version": "2026.09.27-1",
+  "tweaks": [
+    {
+      "id": "menu_show_delay",
+      "title": "Remove menu open delay",
+      "description": "Windows waits about 400 ms before drawing a menu. Setting the delay to zero makes the shell feel immediate.",
+      "family": "System",
+      "risk": "Safe",
+      "defaultEnabled": false,
+      "requiresAdmin": false,
+      "warning": null
+    },
+    {
+      "id": "mouse_acceleration_off",
+      "title": "Disable pointer acceleration",
+      "description": "Makes cursor movement proportional to physical movement. Better for aiming in FPS games; some people dislike it on the desktop.",
+      "family": "System",
+      "risk": "Safe",
+      "defaultEnabled": false,
+      "requiresAdmin": false,
+      "warning": null
+    },
+    {
+      "id": "game_dvr_off",
+      "title": "Disable Game DVR recording",
+      "description": "Stops the Xbox Game Bar from capturing gameplay in the background and may reduce frame-time spikes.",
+      "family": "System",
+      "risk": "Safe",
+      "defaultEnabled": true,
+      "requiresAdmin": false,
+      "warning": null
+    },
+    {
+      "id": "network_throttling_off",
+      "title": "Disable network throttling",
+      "description": "Removes the rate limit Windows applies to multimedia streams. Can reduce latency spikes in online games.",
+      "family": "Network",
+      "risk": "Moderate",
+      "defaultEnabled": false,
+      "requiresAdmin": true,
+      "warning": "Affects all multimedia traffic on this machine, not only games."
+    },
+    {
+      "id": "system_responsiveness",
+      "title": "Lower multimedia CPU reservation",
+      "description": "Reduces the CPU share Windows reserves for background multimedia tasks, leaving more for the game under load.",
+      "family": "System",
+      "risk": "Moderate",
+      "defaultEnabled": false,
+      "requiresAdmin": true,
+      "warning": "May make background audio or video stutter on low-core machines."
+    }
+  ]
+}
